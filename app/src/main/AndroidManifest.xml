@@ -21,6 +21,10 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.example.silen.screen.mainUI" android:exported="false"/>
+        <activity android:name="com.example.silen.screen.content" android:exported="false"/>
+
+
 
     </application>
 

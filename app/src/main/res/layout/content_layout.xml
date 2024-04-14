@@ -30,18 +30,26 @@
             >
 
         </EditText>
-
-
     </LinearLayout>
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listFuncChoose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/navigation"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        tools:ignore="MissingConstraints" />
+        />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentFragment"
+        android:name="com.example.silen.fragment.fragmentLesson"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigation"
+        tools:layout="@layout/lesson_layout"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
