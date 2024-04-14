@@ -4,14 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.silen.R;
+import com.example.silen.fragment.fragmentLesson;
 
 import java.util.ArrayList;
 
-public class content extends Activity {
+public class content extends AppCompatActivity {
     Intent intent;
     RecyclerView recyclerView;
     ArrayList<Function> list = null;
@@ -49,6 +51,8 @@ public class content extends Activity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
+        if(saveInstanceState == null)
+            getSupportFragmentManager().beginTransaction().setReorderingAllowed(true).add(R.id.contentFragment, fragmentLesson.class,null).commit();
 
     }
 }

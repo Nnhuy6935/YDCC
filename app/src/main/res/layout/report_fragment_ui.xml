@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nếu bạn phát hiện 1 liên kết có dấu hiệu không an toàn hoặc đáng ngờ, nhấn vào đây để báo cáo liên kết và giữ cho môi trường trực tuyến của chúng ta an toàn. Việc báo cáo kịp thời giúp chung tôi bảo vệ bạn và cộng đồng khỏi các mối đe dọa tiềm ẩn trên Internet." />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nhập liên kết cần báo cáo..."
+            android:padding="16dp"
+            android:layout_margin="40dp"
+            />
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Báo cáo"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>
